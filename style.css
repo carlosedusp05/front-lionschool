@@ -176,6 +176,24 @@ main{
     padding: 2%;
 }
 
+/* .tela3 button{
+    background-color: #3347B0;
+    display: flex;
+    margin-top: -55px;
+    height: 8%;
+    width: 12%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 5px 5px 10px #6B7EF5;
+    border: 1px solid black;
+    color: white;
+} */
+
+.tela3 button :hover{
+    background-color: #6B7EF5;
+}
+
 .perfil, .estatisticas{
     height: 550px;
     width: 650px;
@@ -188,6 +206,7 @@ main{
     align-items: center;
     justify-content: center;
     gap: 4%;
+    /* margin-left: -15%; */
 }
 
 .perfil img{
@@ -223,7 +242,7 @@ main{
 
 .preenchimento{
     width: 100%;
-    height: 90%;
+    /* height: 90%; */
     background-color: #3347B0;
 }
 
