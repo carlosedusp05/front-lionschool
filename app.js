@@ -1,7 +1,7 @@
 'use-strict'
 
 async function pegarCursos() {
-    const url = `https://lion-school-phbo.onrender.com/cursos`
+    const url = `https://lion-school-backend.onrender.com/cursos`
     const response = await fetch(url)
     const cursos = await response.json()
 
@@ -28,7 +28,7 @@ const carregarCursos = async () => {
 }
 
 async function alunos(id) {
-    const url = `https://lion-school-phbo.onrender.com/alunos?curso_id=${id}`
+    const url = `https://lion-school-backend.onrender.com/alunos?curso_id=${id}`
     const response = await fetch(url)
     const alunos = await response.json()
 
@@ -95,7 +95,7 @@ btnREDES.addEventListener('click', async () => {
 })
 
 async function aluno(id) {
-    const url = `https://lion-school-phbo.onrender.com/alunos/${id}`
+    const url = `https://lion-school-backend.onrender.com/alunos/${id}`
     const response = await fetch(url)
     const aluno = await response.json()
 
