@@ -1,0 +1,23 @@
+{
+  "name": "lionschool",
+  "version": "1.0.0",
+  "description": "![](./img/Captura%20de%20tela%202026-02-27%20132822.png)",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosedusp05/front-lionschool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosedusp05/front-lionschool/issues"
+  },
+  "homepage": "https://github.com/carlosedusp05/front-lionschool#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

@@ -43,7 +43,7 @@ const criarCard = (aluno) => {
     cardImg.src = aluno.foto 
     
     const cardNome = document.createElement('h2')
-    cardNome.textContent = aluno.nome
+    cardNome.textContent = aluno.nome.toUpperCase()
 
     card.appendChild(cardImg)
     card.appendChild(cardNome)
@@ -60,6 +60,8 @@ const tela1 = document.getElementById('tela1')
 const tela2 = document.getElementById('tela2')
 const tela3 = document.getElementById('tela3')
 const container = document.getElementById('alunos')
+const titulo = document.getElementById('titulo')
+
 
 
 btnDS.addEventListener('click', async () => {
@@ -71,6 +73,8 @@ btnDS.addEventListener('click', async () => {
      const listaCursos = await pegarCursos()
 
     const dados = await alunos(listaCursos[0].id)
+    
+    titulo.textContent = listaCursos[0].nome
 
     dados.forEach(aluno => {
        const card = criarCard(aluno)
@@ -87,6 +91,8 @@ btnREDES.addEventListener('click', async () => {
     const listaCursos = await pegarCursos()
 
     const dados = await alunos(listaCursos[1].id)
+
+    titulo.textContent = listaCursos[1].nome
 
     dados.forEach(aluno => {
        const card = criarCard(aluno)
@@ -115,7 +121,7 @@ const perfilAluno = async (id) =>{
     imgPerfil.src = dadosAlunos.foto
 
     const h1Perfil = document.createElement('h1')
-    h1Perfil.textContent = dadosAlunos.nome
+    h1Perfil.textContent = dadosAlunos.nome.toUpperCase()
 
     containerPerfil.appendChild(imgPerfil)
     containerPerfil.appendChild(h1Perfil)
@@ -175,6 +181,7 @@ btnSair.addEventListener('click', () => {
 
     } else if(displayTela3 === 'flex'){
 
+
         tela1.style.display = 'none'
         tela2.style.display = 'flex'
         tela3.style.display = 'none'
@@ -183,3 +190,10 @@ btnSair.addEventListener('click', () => {
 
 
 window.addEventListener('DOMContentLoaded', carregarCursos)
+
+
+module.exports = {
+    pegarCursos,
+    aluno,
+    alunos
+}

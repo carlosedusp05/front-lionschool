@@ -32,6 +32,12 @@ header button{
     background-color: transparent;
     border: none;
     height: 45%;
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
 }
 
 header button:hover{
@@ -162,6 +168,7 @@ main{
     padding: 1%;
     margin-bottom: 20px;
     gap: 5%;
+    color: white;
 }
 
 .card:hover {
@@ -181,20 +188,6 @@ main{
     padding: 2%;
 }
 
-/* .tela3 button{
-    background-color: #3347B0;
-    display: flex;
-    margin-top: -55px;
-    height: 8%;
-    width: 12%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 5px 5px 10px #6B7EF5;
-    border: 1px solid black;
-    color: white;
-} */
-
 .tela3 button :hover{
     background-color: #6B7EF5;
 }
@@ -211,13 +204,14 @@ main{
     align-items: center;
     justify-content: center;
     gap: 4%;
-    /* margin-left: -15%; */
+    color: #3347B0;
 }
 
 .perfil img{
     height: 60%;
     border-radius: 50%;
     border: 0.5px solid black;
+    color: white;
 }
 
 .estatisticas{
